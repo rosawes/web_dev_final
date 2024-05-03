@@ -1,0 +1,180 @@
+body{
+    font-family: Helvetica, Georgia, 'Times New Roman', Times, serif;
+}
+.App {
+    text-align: center;
+    font-family: Helvetica, Georgia, 'Times New Roman', Times, serif;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 66%);
+    
+    color: #333;
+}
+ 
+.innerbox {
+    padding: 20px;
+    background: var(--primary-bod-color);
+    text-align: left;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.innerbox h3 {
+    margin-bottom: 10px;
+}
+ 
+input {
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: calc(50% - 12px);
+    margin-bottom: 10px;
+}
+
+.notes {
+    padding: 10px;
+}
+ 
+.notes-item {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic-heading {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.topic-dropdown {
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/** default */
+:root {
+    --primary-bg-color: rgb(127, 193, 201);
+    --primary-text-color: rgb(0, 0, 0);
+    --primary-head-bg-color: rgb(53, 116, 212);
+    --button-bg-color: hsl(44, 66%, 77%);
+    --button-hover-color: rgb(127, 193, 201);
+    --primary-bod-color: rgb(48, 90, 217);
+}
+
+.pink-theme {
+    --primary-bg-color: #ffcccc;
+    --primary-text-color: #330000;
+    --primary-head-bg-color: #db37ed;
+    --button-bg-color: #ff99cc;
+    --button-hover-color: #db37ed;
+    --primary-bod-color: rgb(208, 153, 198);
+}
+
+.green-theme {
+    --primary-bg-color: #b3ffb3;
+    --primary-text-color: #004d00;
+    --primary-head-bg-color: #66cc66;
+    --button-bg-color: #77b777;
+    --button-hover-color: #0c660c;
+    --primary-bod-color: rgb(65, 174, 88);
+}
+
+.purple-theme {
+    --primary-bg-color: #c888e6;
+    --primary-text-color: #ffffff;
+    --primary-head-bg-color: #7230b8;
+    --button-bg-color: #9d65c0;
+    --button-hover-color: #8e24d4;
+    --primary-bod-color: rgb(149, 78, 211);
+}
+
+.pastel-theme {
+    --primary-bg-color: #ffb3b6;
+    --primary-text-color: #000000;
+    --primary-head-bg-color: #9bf090;
+    --button-bg-color: #91d8e8;
+    --button-hover-color: #a98cd8;
+    --primary-bod-color: rgb(218, 152, 223);
+}
+
+.blackandwhite-theme {
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #000000;
+    --primary-head-bg-color: #000000;
+    --button-bg-color: #bcb6b6;
+    --button-hover-color: #000000;
+    --primary-bod-color: rgb(255, 255, 255);
+}
+
+.card {
+    background: var(--primary-bg-color); 
+    color: var(--primary-text-color);
+    margin: 0 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.head {
+    background: var(--primary-head-bg-color);
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border: black;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.loginLogo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/** just used to separate the logo and the word login a bit */
+.loginWord {
+    margin-top: 15px;
+}
+
+.theme-selector {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
